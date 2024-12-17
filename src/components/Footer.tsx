@@ -33,9 +33,9 @@ const Footer = () => {
 
 	return (
 		<footer
-			className='bg-[#854e0e1c] pt-16 pb-8'
+			className='bg-[#854e0e1c] pt-8 md:pt-16 pb-8'
 			role='contentinfo'>
-			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+			<div className='max-w-7xl mx-auto px-8 sm:px-6 lg:px-8'>
 				<div className='grid grid-cols-1 md:grid-cols-4 gap-8 mb-12'>
 					{/* Brand Section */}
 					<div>

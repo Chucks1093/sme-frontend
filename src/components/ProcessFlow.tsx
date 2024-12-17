@@ -42,7 +42,7 @@ const ProcessFlowCard = (props: ProcessFlowCardProps) => {
 			<h1 className='mt-4 text-center text-[1.1rem] mb-2 font-semibold text-[#1f2e22b8]'>
 				{props.title}
 			</h1>
-			<p className='text-center text-sm text-gray-400'>
+			<p className='text-center text-sm text-gray-400 px-4'>
 				{props.description}
 			</p>
 		</article>
@@ -51,24 +51,24 @@ const ProcessFlowCard = (props: ProcessFlowCardProps) => {
 
 function ProcessFlow() {
 	return (
-		<section className='w-[80%] mx-auto py-[4rem]'>
+		<section className='md:w-[80%] w-[90%] mx-auto py-[4rem]'>
 			<p className='flex items-center justify-center mx-auto w-fit bg-gray-100 text-gray-600 px-3 py-1 text-sm border border-gray-300 rounded-[1rem]'>
 				<Workflow className='w-5 h-5 mr-2' /> Process flow
 			</p>
-			<h2 className='text-center font-manrope font-semibold text-[2rem] mt-2 mb-1 text-green-900'>
+			<h2 className='text-center font-manrope font-semibold text-[1.5rem] md:text-[2rem] mt-2 mb-4 md:mb-1 text-green-900'>
 				How LendWise works
 			</h2>
-			<p className='text-center text-gray-500  mb-8 text-sm'>
+			<p className='text-center text-gray-600 text-sm'>
 				Simple steps to get the funding your business needs
 			</p>
-			<div className='grid grid-cols-3 items-center justify-center gap-10 mt-12 relative'>
+			<div className='grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-10 mt-12 relative'>
 				{applicationSteps.map((step, index) => (
 					<ProcessFlowCard
 						{...step}
 						stepNumber={(index + 1).toString()}
 					/>
 				))}
-				<div className='flex justify-between h-full absolute w-full inset-0 items-start'>
+				<div className=' justify-between h-full absolute w-full inset-0 items-start hidden md:flex'>
 					<div className='w-[20rem] mx-auto' />
 					<img
 						className='w-[4rem]'

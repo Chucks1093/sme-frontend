@@ -22,12 +22,14 @@ const UserAvatar = () => {
 	console.log(userData);
 	const initial = userData?.name || userData?.displayName || "";
 	return (
-		<Avatar className='bg-[#854e0e1c] text-[#1c1e219e] border'>
-			<AvatarImage src={userData?.photoURL} />
-			<AvatarFallback className='uppercase'>
-				{initial.substring(0, 2)}
-			</AvatarFallback>
-		</Avatar>
+		userData && (
+			<Avatar className='bg-[#854e0e1c] text-[#1c1e219e] border'>
+				<AvatarImage src={userData?.photoURL} />
+				<AvatarFallback className='uppercase'>
+					{initial.substring(0, 2)}
+				</AvatarFallback>
+			</Avatar>
+		)
 	);
 };
 
@@ -49,23 +51,23 @@ function LoanPage() {
 	return (
 		<Fragment>
 			<header className='bg-white shadow-sm z-20 fixed h-[10vh] flex items-center justify-between w-[100%] px-[10%] -translate-x-1/2 left-1/2'>
-				<div className='flex items-center justify-between gap-3'>
+				<div className='flex items-center justify-between gap-2 md:gap-3'>
 					<img
 						src='/icons/smedan_footer.png'
 						alt='logo'
-						className='w-9 h-9'
+						className='md:w-9 md:h-9 w-6 h-6'
 					/>
-					<p className='font-manrope font-semibold text-xl text-zinc-700'>
+					<p className='font-manrope font-semibold text-sm md:text-xl text-zinc-700'>
 						SMEDAN{" "}
 					</p>
 				</div>
-				<div className='flex items-center justify-center gap-10 text-lg text-zinc-700'>
+				<div className=' items-center justify-center gap-10 text-lg text-zinc-700 hidden md:flex'>
 					<p> SME Growth Business Loan</p>
 				</div>
 				<div className='flex items-center gap-2'>
 					<button
 						onClick={showApplyModal}
-						className='bg-green-900 text-zinc-100 text-sm px-8 py-4 rounded-md'>
+						className='bg-green-900 text-zinc-100 text-sm px-8 md:px-12 py-3 md:py-4 rounded-md'>
 						Apply now
 					</button>
 					<UserAvatar />

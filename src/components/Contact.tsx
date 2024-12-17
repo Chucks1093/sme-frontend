@@ -27,7 +27,7 @@ const ContactOptions = () => {
 	];
 
 	return (
-		<div className='space-y-4 w-[40%]'>
+		<div className='space-y-4 md:w-[40%]'>
 			{contactCards.map((card, index) => (
 				<a
 					key={index}
@@ -86,7 +86,7 @@ const ContactForm = () => {
 	};
 
 	return (
-		<section className='bg-white rounded-3xl p-8 shadow-sm border w-[60%]'>
+		<section className='bg-white rounded-3xl p-4 shadow-sm border  md:w-[60%]'>
 			<form
 				onSubmit={handleSubmit}
 				className='space-y-6'>
@@ -142,18 +142,18 @@ const ContactForm = () => {
 
 function Contact() {
 	return (
-		<section className='w-[80%] mx-auto py-[4rem]'>
+		<section className='w-[85%] md:w-[80%] mx-auto py-[4rem]'>
 			<p className='flex items-center justify-center mx-auto w-fit bg-gray-100 text-gray-600 px-3 py-1 text-sm border border-gray-300 rounded-[1rem]'>
 				<MessageSquare className='w-5 h-5 mr-2' /> Contact Us
 			</p>
-			<h2 className='text-center font-manrope font-semibold text-[2rem] mt-2 mb-1 text-gray-900'>
+			<h2 className='text-center font-manrope font-semibold text-[1.5rem] md:text-[2rem] mt-2 mb-4 md:mb-1 text-green-900'>
 				Get In Touch With Our Team
 			</h2>
 			<p className='text-center text-gray-500 mb-8 text-sm'>
 				Have questions about your loan? Our support team is here to help
 				24/7
 			</p>
-			<div className='flex x justify-between gap-[4rem]'>
+			<div className='flex flex-col md:flex-row justify-between gap-8 md:gap-[4rem]'>
 				<ContactForm />
 				<ContactOptions />
 			</div>

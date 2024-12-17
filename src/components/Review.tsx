@@ -7,19 +7,19 @@ const Review: React.FC = () => {
 				<ClipboardCheck className='w-5 h-5 mr-2' /> Customer Reviews
 			</p>
 
-			<h2 className='text-center font-manrope font-semibold text-[2rem] mt-2 mb-8 text-gray-900'>
+			<h2 className='text-center font-manrope font-semibold text-[1.5rem] md:text-[2rem] mt-2 mb-4 md:mb-1 text-green-900'>
 				What Our Customers Say
 			</h2>
-			<div className='flex justify-center gap-[5rem] '>
-				<div className='h-[33rem] w-1/2'>
+			<div className='mt-4 flex flex-col md:flex-row justify-center md:gap-[5rem] '>
+				<div className='md:h-[33rem] h-[20rem] w-full'>
 					<img
-						className='w-[80%] h-full  object-cover object-top ml-auto rounded-md'
+						className='md:w-[80%] w-full h-full  object-cover object-top ml-auto rounded-md'
 						src='/images/review-3.jpg'
 						alt=''
 					/>
 				</div>
-				<div className='w-1/2'>
-					<p className='font-manrope  text-[1.8rem] w-[80%] mt-8  text-zinc-800'>
+				<div className='w-full'>
+					<p className='font-manrope text-[1.3rem] √ md:text-[1.8rem] md:w-[80%] mt-8  text-zinc-800'>
 						"Thanks to this loan platform, we transformed our small retail
 						business. The instant approval process and flexible terms
 						meant we could purchase inventory during peak season without

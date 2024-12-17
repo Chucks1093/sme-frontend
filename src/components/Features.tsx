@@ -62,14 +62,14 @@ function Features() {
 			<p className='flex items-center justify-center mx-auto w-fit bg-gray-100 text-gray-600 px-3 py-1 text-sm border border-gray-300 rounded-[1rem]'>
 				<Flame className='w-5 h-5' /> Our Features
 			</p>
-			<h2 className='text-center font-manrope font-semibold text-[2rem] mt-2 mb-1 text-green-900'>
+			<h2 className='text-center font-manrope font-semibold text-[1.5rem] md:text-[2rem] mt-2 mb-4 md:mb-1 text-green-900'>
 				Designed for Your Business Success
 			</h2>
-			<p className='text-center text-gray-600'>
+			<p className='text-center text-gray-600 text-sm'>
 				Everything you need to secure the right financing for your growth
 				and achieve project success with ease.
 			</p>
-			<div className='grid grid-cols-3 items-center justify-center gap-10 mt-10'>
+			<div className='grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-10 mt-10'>
 				{features.map((feature, index) => (
 					<FeatureCard
 						{...feature}
