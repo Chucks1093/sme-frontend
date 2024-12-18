@@ -6,11 +6,23 @@ import { Toaster } from "react-hot-toast";
 import SignUp from "./pages/SignUp";
 import LoanPage from "./pages/LoanPage";
 import Login from "./pages/Login";
+import AdminLayout from "./pages/AdminLayout";
+import LoanRequest from "./pages/LoanRequest";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <LandingPage />,
+	},
+	{
+		path: "/admin",
+		element: <AdminLayout />,
+		children: [
+			{
+				index: true,
+				element: <LoanRequest />,
+			},
+		],
 	},
 	{
 		path: "/signup",

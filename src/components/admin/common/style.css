@@ -1,0 +1,4 @@
+.customer__card {
+    display: grid;
+    grid-template-columns: 23% 15% 25% 15% 10% 10%;
+}
