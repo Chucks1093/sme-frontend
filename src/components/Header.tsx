@@ -10,7 +10,7 @@ function Header() {
 					className='md:w-9 md:h-9 w-6 h-6'
 				/>
 				<p className='font-manrope font-semibold text-sm md:text-xl text-zinc-700'>
-					SMEDAN{" "}
+					SMELOANS
 				</p>
 			</div>
 			<div className=' items-center justify-center gap-10 text-sm text-zinc-800 hidden md:flex'>

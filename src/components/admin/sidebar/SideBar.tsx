@@ -224,7 +224,7 @@ const Sidebar = () => {
 					className=' w-6 h-6'
 				/>
 				<p className='font-manrope font-semibold text-sm text-zinc-700'>
-					SMEDAN{" "}
+					SMELOANS{" "}
 				</p>
 			</div>
 

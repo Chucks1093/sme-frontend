@@ -86,7 +86,7 @@ const LoanApplicationForm = ({
 			if (Math.random() < 0.5) {
 				showToast.success("Your request is under Review");
 			} else {
-				showToast.error("Application failed");
+				showToast.error("Application rejected");
 			}
 		}, 2000);
 		// Here you would typically send the data to your backend

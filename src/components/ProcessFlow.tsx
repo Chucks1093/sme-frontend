@@ -56,7 +56,7 @@ function ProcessFlow() {
 				<Workflow className='w-5 h-5 mr-2' /> Process flow
 			</p>
 			<h2 className='text-center font-manrope font-semibold text-[1.5rem] md:text-[2rem] mt-2 mb-4 md:mb-1 text-green-900'>
-				How LendWise works
+				How SMELOANS works
 			</h2>
 			<p className='text-center text-gray-600 text-sm'>
 				Simple steps to get the funding your business needs
