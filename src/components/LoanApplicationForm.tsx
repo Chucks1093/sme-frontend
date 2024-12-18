@@ -13,6 +13,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Checkbox } from "@/components/ui/checkbox";
+import { showToast } from "@/lib/utils";
 
 const LoanApplicationForm = ({
 	setShowForm,
@@ -79,6 +80,15 @@ const LoanApplicationForm = ({
 
 	const handleSubmit = () => {
 		console.log("Form submitted:", formData);
+		showToast.loading("Submitting Application");
+		setTimeout(() => {
+			setShowForm(false);
+			if (Math.random() < 0.5) {
+				showToast.success("Your request is under Review");
+			} else {
+				showToast.error("Application failed");
+			}
+		}, 2000);
 		// Here you would typically send the data to your backend
 	};
 
