@@ -8,7 +8,7 @@ export default function AdminLayout() {
 			<DashboardLayoutStyles />
 			<SideBar />
 			<Header />
-			<div className='outlet flex flex-col  px-4'>
+			<div className='outlet flex flex-col  px-4 bg-[#f1f2f2]'>
 				<Outlet />
 			</div>
 		</div>
